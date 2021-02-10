@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pmnist-onnx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="title">ONNX.js with Pytorch model</h1>
+        <div class="card elevation">
+            <div class="draw elevation">
+                <canvas class="canvas" id="canvas" width="280" height="280"></canvas>
+                <div class="button" id="clear-button">
+                    비우기
+                </div>
+            </div>
+            <div class="prediction elevation">
+                <div class="text">예측값</div>
+                <div class="result" id="result"></div>
+
+                <div class="prediction-box">
+
+                    <div class="prediction-col" id="prediction-0">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">0</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-1">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">1</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-2">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">2</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-3">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">3</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-4">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">4</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-5">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">5</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-6">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">6</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-7">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">7</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-8">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">8</div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-9">
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                        <div class="prediction-number">9</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
