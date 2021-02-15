@@ -8,30 +8,33 @@
 </head>
 
 <body>
-    <div class="card elevation">
+    <div class="elevation">
         <h1 class="title">ONNX.js with Pytorch model</h1>
-        <div class="middle">
-            <div class="resultBox">
-                <div class="result">T-shirt/top</div>
-                <div class="percent">100%</div>
-            </div>
+        <div class="m">
+            <div class="result" id="result"></div>
+            <div class="percent" id="percent"></div>
         </div>
-        <div class="bottom">
-            <div class="text"> 이미지를 클릭하세요! </div>
-            <div class="imageSet">
-                <canvas class="c" id="c1"></canvas>
-                <canvas class="c" id="c2"></canvas>
-                <canvas class="c" id="c3"></canvas>
-                <canvas class="c" id="c4"></canvas>
-                <canvas class="c" id="c5"></canvas>
-                <canvas class="c" id="c6"></canvas>
-                <canvas class="c" id="c7"></canvas>
-                <canvas class="c" id="c8"></canvas>
-                <canvas class="c" id="c9"></canvas>
-                <canvas class="c" id="c10"></canvas>
-            </div>
+        <div class="s">
+            <div class="description">이미지를 클릭하세요!</div>
+            <table class="table">
+                <tr>
+                    <td><canvas class="canvas" width="84" height="84" id="c1"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c2"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c3"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c4"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c5"></canvas></td>
+                </tr>
+                <tr>
+                    <td><canvas class="canvas" width="84" height="84" id="c6"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c7"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c8"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c9"></canvas></td>
+                    <td><canvas class="canvas" width="84" height="84" id="c10"></canvas></td>
+                </tr>
+            </table>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
     <script src="script.js"></script>
 </body>
