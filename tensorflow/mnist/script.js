@@ -143,6 +143,7 @@ async function updatePrediction(ctx) {
 
     const imgData = ctx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE);
     const data = imgData.data;
+    // 이미지 데이터 전처리
     var arr = [];
     // 그레이 스케일링
     for (let i = 0; i < data.length; i += 4) {
@@ -157,6 +158,7 @@ async function updatePrediction(ctx) {
     img = tf.squeeze(img, -1)
     img = tf.expandDims(img, 0);
     img = tf.expandDims(img, 0);
+    // 결과 예측
     const prediction = model.predict(img);
     var r = prediction.argMax(1).dataSync();
     var rr = r[0];

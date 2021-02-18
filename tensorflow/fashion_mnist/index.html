@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pfmnist-tensorflowjs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Tensorflow.js with Pytorch model</h1>
+        <div class="card elevation">
+            <div class="draw elevation">
+                <canvas class="canvas" id="canvas" width="280" height="280"></canvas>
+                <div class="button" id="clear-button">
+                    다시 그리기
+                </div>
+            </div>
+            <div class="prediction">
+                <div class="prediction-box">
+
+                    <div class="prediction-col" id="prediction-0">
+                        <div class="prediction-number">T-shirt/top</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-1">
+                        <div class="prediction-number">Trouser</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-2">
+                        <div class="prediction-number">Pullover</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-3">
+                        <div class="prediction-number">Dress</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-4">
+                        <div class="prediction-number">Coat</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-5">
+                        <div class="prediction-number">Sandal</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-6">
+                        <div class="prediction-number">Shirt</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-7">
+                        <div class="prediction-number">Sneaker</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-8">
+                        <div class="prediction-number">Bag</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="prediction-col" id="prediction-9">
+                        <div class="prediction-number">Ankle-boot</div>
+                        <div class="box"></div>
+                        <div class="prediction-bar-container">
+                            <div class="prediction-bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text">이것은 아마...</div>
+                <div class="result" id="result"></div>
+            </div>
+        </div>
+        <div>
+            <div class="example">다음 옷들 중 하나를 그려보세요!</div>
+            <table class="table">
+                <tr>
+                    <th>T-shirt/top</th>
+                    <th>Trouser</th>
+                    <th>Pullover</th>
+                    <th>Dress</th>
+                    <th>Coat</th>
+                    <th>Sandal</th>
+                    <th>Shirt</th>
+                    <th>Sneaker</th>
+                    <th>Bag</th>
+                    <th>Ankle boot</th>
+                </tr>
+                <tr>
+                    <td><img src="img/t-shirt.jpg" alt="T-shirt/top"></td>
+                    <td><img src="img/trouser.jpg" alt="Trouser"></td>
+                    <td><img src="img/pullover.jpg" alt="Pullover"> </td>
+                    <td><img src="img/dress.jpg" alt="Dress"> </td>
+                    <td><img src="img/coat.jpg" alt="Coat"> </td>
+                    <td><img src="img/sandal.jpg" alt="Sandal"> </td>
+                    <td><img src="img/shirt.jpg" alt="Shirt"> </td>
+                    <td><img src="img/sneaker.jpg" alt="Sneaker"> </td>
+                    <td><img src="img/bag.jpg" alt="Bag"> </td>
+                    <td><img src="img/ankle-boot.jpg" alt="Ankle-boot"> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.0.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
