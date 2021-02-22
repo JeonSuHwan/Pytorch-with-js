@@ -1,5 +1,5 @@
 # Pytorch-with-js
-pytorch 모듈을 각 프레임워크에 적용
+pytorch 모델을 각 프레임워크에 적용
 
 <h3>Result (Mnist model - onnx.js)</h3>
 <img src="./img/omnist.PNG">
