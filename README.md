@@ -7,7 +7,7 @@
 <img src="./img/tmnist.PNG">
 
 <h3>Result (Fashion mnist model - onnx.js)</h3>
-<img src="./img/ofmnist.PNG">
+<img src="./img/ofashion_mnist.PNG">
 
 <h3>Result (Fashion mnist model - tensorflow.js)</h3>
-<img src="./img/tfmnist.PNG">
+<img src="./img/tfashion_mnist.PNG">
